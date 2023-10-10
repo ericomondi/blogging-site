@@ -1,0 +1,22 @@
+Tables in our database
+1.Users Table:
+user_id (Primary Key)
+username
+email
+password (hashed)
+user_role (e.g., admin, author, reader)
+
+2.Blog Posts Table:
+post_id (Primary Key)
+title
+content (For textual content)
+publication_date
+author_id (Foreign Key referencing Users Table)
+category_id (Foreign Key referencing Categories Table)
+status (e.g., published, draft, deleted)
+google_drive_link (For storing Google Drive links)
+
+3.Categories Table:
+category_id (Primary Key)
+category_name
+description
